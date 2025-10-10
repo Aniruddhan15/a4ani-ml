@@ -1,7 +1,8 @@
 import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
-import { Award, BookOpen, Trophy, FileCheck } from "lucide-react";
+import { Award, BookOpen, Trophy, FileCheck, Presentation } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLink } from "lucide-react";
 
 const Achievements = () => {
   const certifications = [
@@ -18,8 +19,14 @@ const Achievements = () => {
   ];
 
   const workshops = [
-    "Workshop on Essential Skills for Professional Development at MBITS",
-    "Presented at 5th International Conference on Advances in Artificial Intelligence and Cyber Security (AICS 2025)",
+    "Part of Core Event Management Committee that presented Decode with DSA conducted by the CodeChef, held at VIT Chennai, July'23",
+    "Intra Department Academic Year Project Expo 2023, 2024",
+  ];
+
+  const presentations = [
+    "PowerPoint presentation on Natural Language Processing as part of Open Classroom Discussion, Apr'2023",
+    "Participated in FIL-Bengaluru: Web 3 Conference at Sheraton-Grand, White Field, Bengaluru, Dec'23",
+    "Presented a poster on \"Stress Level Detection using Sleep Position\" as part of the Project held at VIT Chennai, Aug'24",
   ];
 
   const contributions = [
@@ -27,11 +34,13 @@ const Achievements = () => {
       platform: "Kaggle",
       description: "Active participant in data science competitions and collaborative projects",
       icon: Trophy,
+      link: "https://www.kaggle.com/naniruddhan",
     },
     {
       platform: "GeeksforGeeks",
       description: "Technical articles on AI/ML topics and algorithm implementations",
       icon: BookOpen,
+      link: "https://www.geeksforgeeks.org/user/aniruddhan26/contributions/?type=articles",
     },
   ];
 
@@ -146,6 +155,25 @@ const Achievements = () => {
             </div>
           </section>
 
+          {/* Presentations, Seminars & Conference */}
+          <section className="mb-16 max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+              <Presentation className="h-8 w-8 text-accent" />
+              Presentations, Seminars & Conference
+            </h2>
+            <div className="space-y-4">
+              {presentations.map((presentation, index) => (
+                <div
+                  key={index}
+                  className="bg-card border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300 animate-fade-in"
+                  style={{ animationDelay: `${(researchWorks.length + certifications.length + workshops.length + index) * 100}ms` }}
+                >
+                  <p className="text-foreground">{presentation}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* Contributions */}
           <section className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
@@ -156,21 +184,27 @@ const Achievements = () => {
               {contributions.map((contribution, index) => {
                 const Icon = contribution.icon;
                 return (
-                  <div
+                  <a
                     key={index}
-                    className="bg-card border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300 animate-fade-in"
-                    style={{ animationDelay: `${(researchWorks.length + certifications.length + workshops.length + index) * 100}ms` }}
+                    href={contribution.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-card border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300 animate-fade-in group"
+                    style={{ animationDelay: `${(researchWorks.length + certifications.length + workshops.length + presentations.length + index) * 100}ms` }}
                   >
                     <div className="flex items-start gap-4">
                       <div className="p-3 rounded-xl bg-gradient-primary">
                         <Icon className="h-6 w-6 text-white" />
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-foreground mb-2">{contribution.platform}</h3>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          <h3 className="text-lg font-semibold text-foreground">{contribution.platform}</h3>
+                          <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-accent transition-colors" />
+                        </div>
                         <p className="text-sm text-muted-foreground">{contribution.description}</p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
