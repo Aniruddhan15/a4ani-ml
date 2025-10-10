@@ -68,11 +68,11 @@ const Achievements = () => {
             subtitle="Recognition, certifications, and contributions"
           />
 
-          {/* Research Publications */}
+          {/* Research Contributions */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
               <BookOpen className="h-8 w-8 text-primary" />
-              Research Publications
+              Research Contributions
             </h2>
             <div className="space-y-4">
               {researchWorks.map((work, index) => (

@@ -96,9 +96,9 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Research Papers Section */}
+          {/* Research Contributions Section */}
           <section className="mt-20 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Research Publications</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Research Contributions</h2>
             <div className="grid gap-6">
               {[
                 {
