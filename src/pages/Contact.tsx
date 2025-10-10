@@ -12,12 +12,6 @@ const Contact = () => {
       link: "mailto:aniruddhan26@gmail.com",
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "(202) 352-2975",
-      link: "tel:+12023522975",
-    },
-    {
       icon: MapPin,
       label: "Location",
       value: "College Park, Maryland, 20740",
