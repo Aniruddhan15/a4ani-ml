@@ -23,19 +23,19 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/aniruddhan-narasimhan",
+      url: "https://www.linkedin.com/in/n-aniruddhan-15688021b/",
       color: "hover:text-[#0077B5]",
     },
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/aniruddhan26",
+      url: "https://github.com/Aniruddhan15",
       color: "hover:text-primary",
     },
     {
       icon: FileText,
       label: "Resume",
-      url: "#",
+      url: "https://drive.google.com/file/d/13yIcEZKR-S9qfnPQ7uejDKPDMPhiQAUZ/view?usp=sharing",
       color: "hover:text-accent",
     },
   ];
@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="container mx-auto px-6">
           <PageHeader
             title="Get In Touch"
-            subtitle="I'm actively seeking internship opportunities in Data Science and Machine Learning"
+            subtitle="I'm actively seeking internship opportunities in Machine Learning, Data Science, and AI"
           />
 
           <div className="max-w-5xl mx-auto">
@@ -112,8 +112,8 @@ const Contact = () => {
                 <div className="bg-gradient-primary p-6 rounded-2xl text-white">
                   <h3 className="text-xl font-bold mb-2">Availability</h3>
                   <p className="text-white/90">
-                    Currently seeking Summer 2025 internship opportunities in Data Science, 
-                    Machine Learning, and AI. Available for full-time roles starting May 2027.
+                    Currently seeking Summer 2026 internship opportunities in Machine Learning, 
+                    Data Science, and AI. Available for full-time roles starting May 2027.
                   </p>
                 </div>
               </div>
@@ -134,19 +134,31 @@ const Contact = () => {
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <span className="text-accent mt-1">•</span>
-                          <span>Summer 2025 Data Science Internships</span>
+                          <span>ML Engineer Intern</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-accent mt-1">•</span>
-                          <span>Machine Learning Research Opportunities</span>
+                          <span>DS Intern</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-accent mt-1">•</span>
-                          <span>AI/ML Project Collaborations</span>
+                          <span>MLOPS Intern</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-accent mt-1">•</span>
-                          <span>Healthcare AI & Computer Vision Roles</span>
+                          <span>Data Analyst Intern</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent mt-1">•</span>
+                          <span>Data Engineer Intern</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent mt-1">•</span>
+                          <span>AI Intern</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent mt-1">•</span>
+                          <span>AI Engineer Intern</span>
                         </li>
                       </ul>
                     </div>
