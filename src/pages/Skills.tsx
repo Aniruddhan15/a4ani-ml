@@ -105,7 +105,7 @@ const Skills = () => {
 
           {/* Expertise Areas */}
           <section className="mt-20 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Domain Expertise</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Fields I've Worked In & Interested To Explore</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
