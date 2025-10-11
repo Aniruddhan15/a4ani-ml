@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, User, Briefcase, Code, Award, Mail } from "lucide-react";
+import { Home, User, Briefcase, Code, Award, Mail, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navigation = () => {
@@ -11,6 +11,7 @@ const Navigation = () => {
     { path: "/projects", label: "Projects", icon: Briefcase },
     { path: "/skills", label: "Skills", icon: Code },
     { path: "/achievements", label: "Achievements", icon: Award },
+    { path: "/volunteering", label: "Volunteering", icon: Users },
     { path: "/contact", label: "Contact", icon: Mail },
   ];
 

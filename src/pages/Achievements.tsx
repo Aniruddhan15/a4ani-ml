@@ -109,7 +109,7 @@ const Achievements = () => {
       <div className="min-h-screen bg-background pt-24 pb-16">
         <div className="container mx-auto px-6">
           <PageHeader
-            title="Volunteering, Presentations and Achievements"
+            title="Achievements"
             subtitle="Recognition, certifications, and contributions"
           />
 
