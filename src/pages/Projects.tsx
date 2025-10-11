@@ -12,6 +12,7 @@ const Projects = () => {
       tech: ["Python", "Gemini Vision Pro", "LLM", "Computer Vision", "Flask"],
       impact: "Improved dietary tracking with AI-powered image recognition and personalized suggestions",
       category: "AI/ML Application",
+      githubLink: "https://github.com/Aniruddhan15/NUTRITION_APP-USING-GEMINI-API",
     },
     {
       title: "Fetal-AI: Health Status Prediction",
@@ -19,6 +20,15 @@ const Projects = () => {
       tech: ["Flask", "Machine Learning", "Python", "Scikit-Learn", "Healthcare AI"],
       impact: "Early risk identification system for prenatal care support",
       category: "Healthcare",
+      githubLink: "https://github.com/Aniruddhan15/FETAL-AI-Prediction-Project",
+    },
+    {
+      title: "RAG Document Analyzer using Groq",
+      description: "Built a Retrieval-Augmented Generation system for intelligent document analysis and question answering using Groq API.",
+      tech: ["Python", "RAG", "Groq API", "NLP", "LangChain"],
+      impact: "Enhanced document understanding and information retrieval capabilities",
+      category: "AI/ML Application",
+      githubLink: "https://github.com/Aniruddhan15/DocumentQA-Groq",
     },
     {
       title: "Brain Tumor Detection using ResNet-50",
@@ -26,6 +36,7 @@ const Projects = () => {
       tech: ["Deep Learning", "ResNet-50", "TensorFlow", "Medical Imaging", "Python"],
       impact: "Improved diagnostic accuracy for brain tumor classification",
       category: "Medical AI",
+      submission: "Submission to Springer",
     },
     {
       title: "Scalable ML Pipelines for Cloud-Based DDoS Detection",
@@ -33,6 +44,7 @@ const Projects = () => {
       tech: ["MLOps", "AWS", "Docker", "CI/CD", "Security", "Python"],
       impact: "Enhanced security and response efficiency in cloud logistics",
       category: "Cybersecurity",
+      submission: "Submission to Springer",
     },
   ];
 
@@ -83,14 +95,22 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3 pt-4 border-t border-border">
-                  <button className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-2">
-                    <Github className="h-4 w-4" />
-                    Code
-                  </button>
-                  <button className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-2">
-                    <ExternalLink className="h-4 w-4" />
-                    Demo
-                  </button>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-2"
+                    >
+                      <Github className="h-4 w-4" />
+                      Code
+                    </a>
+                  )}
+                  {project.submission && (
+                    <Badge className="bg-accent/10 text-accent border-accent/20">
+                      {project.submission}
+                    </Badge>
+                  )}
                 </div>
               </Card>
             ))}
@@ -130,10 +150,6 @@ const Projects = () => {
                         {paper.role}
                       </Badge>
                     </div>
-                    <button className="text-sm text-primary hover:text-accent transition-colors flex items-center gap-2">
-                      <ExternalLink className="h-4 w-4" />
-                      View Paper
-                    </button>
                   </div>
                 </div>
               ))}

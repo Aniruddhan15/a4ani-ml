@@ -36,7 +36,7 @@ const Achievements = () => {
       text: "Part of Core Event Management Committee that presented Decode with DSA conducted by the CodeChef, held at VIT Chennai, July'23",
     },
     {
-      text: "Intra Department Academic Year Project Expo 2023, 2024: Presented an anti-riot drone detection prototype",
+      text: "Intra Department Academic Year Project Expo 2023, 2024: Presented an Anti-Riot Drone Detection Prototype",
       link: "https://github.com/Aniruddhan15/Anti-Riot-Drone-Project",
     },
   ];
