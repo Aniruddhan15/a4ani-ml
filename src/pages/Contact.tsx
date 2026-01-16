@@ -35,7 +35,7 @@ const Contact = () => {
     {
       icon: FileText,
       label: "Resume",
-      url: "https://drive.google.com/file/d/13yIcEZKR-S9qfnPQ7uejDKPDMPhiQAUZ/view?usp=sharing",
+      url: "https://drive.google.com/file/d/13EhcsxRKj0U0YzS54ccDZ0LiKpyC3vet/view?usp=sharing",
       color: "hover:text-accent",
     },
   ];

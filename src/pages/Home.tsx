@@ -114,7 +114,7 @@ const Home = () => {
                   <Mail className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/13yIcEZKR-S9qfnPQ7uejDKPDMPhiQAUZ/view?usp=sharing"
+                  href="https://drive.google.com/file/d/13EhcsxRKj0U0YzS54ccDZ0LiKpyC3vet/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300"
