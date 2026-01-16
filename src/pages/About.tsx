@@ -10,6 +10,14 @@ const About = () => {
       period: "Expected May 2027",
       location: "Maryland, USA",
       gpa: "3.9/4.0",
+      coursework: {
+        semester: "Fall 2025",
+        courses: [
+          "MSML 601 Probability and Statistics",
+          "MSML 602 Principles of Data Science",
+          "MSML 603 Principles of Machine Learning",
+        ],
+      },
     },
     {
       degree: "Bachelor of Technology in Computer Science and Engineering (AI & Robotics)",
@@ -121,6 +129,21 @@ const About = () => {
                       </>
                     )}
                   </div>
+                  {edu.coursework && (
+                    <div className="mt-4 pt-4 border-t border-border/50">
+                      <p className="text-sm font-semibold text-primary mb-2">
+                        Coursework ({edu.coursework.semester}):
+                      </p>
+                      <ul className="space-y-1">
+                        {edu.coursework.courses.map((course, idx) => (
+                          <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                            <span className="text-accent mt-0.5">•</span>
+                            <span>{course}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
