@@ -98,7 +98,7 @@ const Home = () => {
                   <Github className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/n-aniruddhan-15688021b/"
+                  href="https://www.linkedin.com/in/aniruddhan-narasimhan-15688021b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300"

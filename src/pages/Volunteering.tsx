@@ -6,6 +6,24 @@ import { Card } from "@/components/ui/card";
 const Volunteering = () => {
   const volunteeringRoles = [
     {
+      title: "Challenge Course Facilitator",
+      organization: "University of Maryland, College Park",
+      location: "College Park, MD, USA",
+      period: "December 2024 – Present",
+      responsibilities: [
+        "Design and run Challenge Course workshops, based on group goals, at the RecWell Challenge Course, with support from challenge course supervisors.",
+        "Introduce and lead team-building activities for Challenge Course participants.",
+        "Introduce and lead climbing activities for Challenge Course participants.",
+        "Facilitate and debrief group events and processing of activities.",
+        "Assist participants in the correct use of Challenge Course-related equipment.",
+        "Inspect Challenge Course-related equipment and report damage or wear to the Coordinator for Challenge Course and Climbing Wall programs.",
+        "Assess and properly respond to emergencies.",
+        "Actively observe groups on the challenge course.",
+        "Cooperate with fellow facilitators to lead smooth and effective programs.",
+        "Lead groups through the experiential learning cycle with intentional reflections and debriefs.",
+      ],
+    },
+    {
       title: "Event Assistant",
       organization: "CodeChef VIT Society",
       location: "Chennai, India",
