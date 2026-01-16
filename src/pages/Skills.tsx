@@ -132,6 +132,19 @@ const Skills = () => {
               ))}
             </div>
           </section>
+
+          {/* Currently Learning */}
+          <section className="mt-16 max-w-2xl mx-auto">
+            <div className="bg-gradient-primary p-6 rounded-2xl text-white animate-fade-in">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
+                <h3 className="text-xl font-bold">Currently Learning</h3>
+              </div>
+              <p className="text-white/90">
+                Working on upskilling <span className="font-semibold">MLOps</span> and <span className="font-semibold">Agentic AI</span>.
+              </p>
+            </div>
+          </section>
         </div>
       </div>
     </>

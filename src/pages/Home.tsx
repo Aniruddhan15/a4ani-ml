@@ -146,7 +146,7 @@ const Home = () => {
             <div className="text-sm text-muted-foreground">Research Papers</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border hover:border-primary/50 hover:scale-105 hover:shadow-glow-primary transition-all duration-300">
-            <div className="text-3xl font-bold text-primary mb-2">3.6</div>
+            <div className="text-3xl font-bold text-primary mb-2">3.6*</div>
             <div className="text-sm text-muted-foreground">GPA</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border hover:border-primary/50 hover:scale-105 hover:shadow-glow-primary transition-all duration-300">
