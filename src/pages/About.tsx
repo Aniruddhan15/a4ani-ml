@@ -9,6 +9,7 @@ const About = () => {
       institution: "University of Maryland, College Park",
       period: "Expected May 2027",
       location: "Maryland, USA",
+      gpa: "3.9/4.0",
     },
     {
       degree: "Bachelor of Technology in Computer Science and Engineering (AI & Robotics)",

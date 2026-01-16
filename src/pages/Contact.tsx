@@ -23,7 +23,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/n-aniruddhan-15688021b/",
+      url: "https://www.linkedin.com/in/aniruddhan-narasimhan-15688021b/",
       color: "hover:text-[#0077B5]",
     },
     {
