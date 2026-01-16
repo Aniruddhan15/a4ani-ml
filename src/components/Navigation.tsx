@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Home, User, Briefcase, Code, Award, Mail, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   const location = useLocation();
@@ -44,6 +45,7 @@ const Navigation = () => {
                 </Link>
               );
             })}
+            <ThemeToggle />
           </div>
 
           <div className="md:hidden flex items-center space-x-1">
@@ -66,6 +68,7 @@ const Navigation = () => {
                 </Link>
               );
             })}
+            <ThemeToggle />
           </div>
         </div>
       </div>
