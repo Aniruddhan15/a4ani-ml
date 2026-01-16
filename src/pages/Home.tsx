@@ -54,16 +54,35 @@ const Home = () => {
                 Building AI solutions that make a difference
               </p>
 
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-8 animate-fade-in-up delay-400">
+              <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-8 animate-fade-in-up delay-400">
+                <Link to="/about">
+                  <Button size="sm" variant="outline" className="border-primary/50 hover:bg-primary/10 hover:scale-105 hover:border-primary transition-all duration-300">
+                    About
+                  </Button>
+                </Link>
                 <Link to="/projects">
-                  <Button size="lg" className="group bg-gradient-primary hover:shadow-glow-primary hover:scale-105 transition-all duration-300">
-                    View Projects
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <Button size="sm" className="bg-gradient-primary hover:shadow-glow-primary hover:scale-105 transition-all duration-300">
+                    Projects
+                  </Button>
+                </Link>
+                <Link to="/skills">
+                  <Button size="sm" variant="outline" className="border-primary/50 hover:bg-primary/10 hover:scale-105 hover:border-primary transition-all duration-300">
+                    Skills
+                  </Button>
+                </Link>
+                <Link to="/achievements">
+                  <Button size="sm" variant="outline" className="border-primary/50 hover:bg-primary/10 hover:scale-105 hover:border-primary transition-all duration-300">
+                    Achievements
+                  </Button>
+                </Link>
+                <Link to="/volunteering">
+                  <Button size="sm" variant="outline" className="border-primary/50 hover:bg-primary/10 hover:scale-105 hover:border-primary transition-all duration-300">
+                    Volunteering
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10 hover:scale-105 hover:border-primary transition-all duration-300">
-                    Get In Touch
+                  <Button size="sm" variant="outline" className="border-primary/50 hover:bg-primary/10 hover:scale-105 hover:border-primary transition-all duration-300">
+                    Contact
                   </Button>
                 </Link>
               </div>
